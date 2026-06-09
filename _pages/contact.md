@@ -41,7 +41,7 @@ function updateMailLink() {
 
 ${message}`;
 
-  const mailto = `mailto:mail@address.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailto = `mailto:f.dalessandro.02@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   document.getElementById("mailLink").href = mailto;
 }
