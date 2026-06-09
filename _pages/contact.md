@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Send me an e-mail
 permalink: /contact/
 ---
 
@@ -20,7 +20,7 @@ permalink: /contact/
       <textarea id="message" rows="6" placeholder="Write your message..."></textarea>
     </label>
 
-    <a id="mailLink" href="#" class="send-button">Send Email</a>
+    <a id="mailLink" href="#" class="send-button">Send</a>
 
   </div>
 </div>
