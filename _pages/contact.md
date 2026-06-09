@@ -6,14 +6,9 @@ permalink: /contact/
 
 <div class="contact-container">
 
-  <p>If you'd like to reach out, you can send me an email directly:</p>
+  <p>Feel free to reach out, I would be thrilled to hear from you!</p>
 
   <div class="contact-form">
-
-    <label>
-      Your email:
-      <input type="email" id="userEmail" placeholder="you@example.com">
-    </label>
 
     <label>
       Subject:
@@ -32,16 +27,10 @@ permalink: /contact/
 
 <script>
 function updateMailLink() {
-  const email = document.getElementById("userEmail").value;
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
 
-  const body =
-`From: ${email}
-
-${message}`;
-
-  const mailto = `mailto:f.dalessandro.02@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailto = `mailto:f.dalessandro.02@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
 
   document.getElementById("mailLink").href = mailto;
 }
