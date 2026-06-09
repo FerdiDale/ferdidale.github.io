@@ -530,6 +530,43 @@ body:after {
 Modules - reusable parts of our design
 
 -------------------------------- */
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.send-button {
+    display: inline-block;
+    padding: 10px 14px;
+    text-align: center;
+    background: #111;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+.send-button:hover {
+    background: #333;
+}
+
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
