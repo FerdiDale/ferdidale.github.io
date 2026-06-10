@@ -444,13 +444,15 @@ nav {
 
 .wrapper-main {
     flex: 1;
+    padding-bottom: 40px;
 }
+
 .wrapper-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: $lightGray;
+    width: 100%;
+    background-color: $lightGray;
 }
+
+
 
 footer {
     padding: 30px 0;
@@ -465,14 +467,6 @@ footer {
     margin-bottom: 12px;
     color: #666;
     font-size: 16px;
-}footer {
-    padding: 30px 0;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
 }
 
 .footer svg,
@@ -491,6 +485,14 @@ footer {
 .footer a {
     display: inline-flex;
     align-items: center;
+}
+
+.footer svg {
+    transition: transform 0.2s ease;
+}
+
+.footer svg:hover {
+    transform: translateY(-2px);
 }
 
 .back-to-top {
