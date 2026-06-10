@@ -177,11 +177,11 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: $blue;
+  color: $orange;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $orange;
   }
 }
 
@@ -578,17 +578,17 @@ Modules - reusable parts of our design
 }
 
 .about-row {
-    display: grid;
-    grid-template-columns: 260px 1fr;
+    display: flex;
     gap: 40px;
-    align-items: center; /* IMPORTANT */
+    align-items: flex-start; /* IMPORTANT */
+    margin-top: 30px;
 }
 
 /* PROFILE IMAGE */
 .about-photo {
     width: 240px;
     height: auto;
-    justify-self: center;
+    display: block;
 }
 
 /* HOBBY IMAGES GRID */
@@ -598,7 +598,10 @@ Modules - reusable parts of our design
     gap: 10px;
     width: 100%;
     max-width: 320px;
-    justify-self: center;
+}
+
+.hobbies-text {
+    align-self: flex-start;
 }
 
 .hobby-images img {
