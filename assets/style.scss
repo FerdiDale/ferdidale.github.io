@@ -589,6 +589,10 @@ Modules - reusable parts of our design
     grid-area: bio;
 }
 
+.hobbies-text a:hover {
+    color: $lightOrange; /* choose any color you like */
+}
+
 .hobby-images {
     grid-area: hobbyimg;
 }
@@ -602,6 +606,7 @@ Modules - reusable parts of our design
     width: 240px;
     height: auto;
     margin-top: 18px;
+    border-radius: 6px;
 }
 
 /* HOBBY IMAGES GRID */

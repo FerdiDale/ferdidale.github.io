@@ -51,7 +51,7 @@ permalink: /aboutme/
     <p>
       Outside of game development, <b>music</b> is probably my greatest passion. I love listening to it, studying it, and performing it. I have been playing the piano since I was ten years old, focusing primarily on classical music and arrangements of video game soundtracks.<br>
 
-      A few years ago, I also composed a couple of original pieces, which you can listen to <a href="https://www.youtube.com/@fefly_vgm7137" target="_blank">here</a>.<br>
+      A few years ago, I also composed a couple of original pieces, which you can listen to <a href="https://www.youtube.com/@fefly_vgm7137" target="_blank"><b>here</b></a>.<br>
 
       In general, I enjoy experimenting and trying new hobbies. I consider myself a creative and hands-on person, and recently I have taken an interest in <b>cosplaying, crocheting and cake decorating</b>.<br>
 
