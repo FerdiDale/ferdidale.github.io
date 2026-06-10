@@ -541,11 +541,9 @@ Modules - reusable parts of our design
 }
 
 .about-photo {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    flex-shrink: 0;
+    width: 240px;
+    max-width: 40vw;
+    height: auto;
 }
 
 .about-text {
@@ -560,10 +558,9 @@ Modules - reusable parts of our design
     }
 
     .about-photo {
-        width: 240px;
-        max-width: 40vw;
-        height: auto;
+        width: 180px;
     }
+}
 
 /* ===== SECTION TEXT ===== */
 .about-section {
