@@ -612,10 +612,6 @@ Modules - reusable parts of our design
     transition: transform 0.2s ease;
 }
 
-.about-gallery img:hover {
-    transform: scale(1.03);
-}
-
 .resume-actions {
     display: flex;
     flex-direction: column;
