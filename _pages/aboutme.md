@@ -11,10 +11,10 @@ permalink: /aboutme/
   <div class="about-text">
     <p>
 I am a 24-year-old <b>game programmer</b> currently completing my M.Sc. in Computer Science, 
-with an <b>expected graduation date of September 2026</b>. <br>
+with an <b>expected graduation date of September 2026</b>.
 I am actively <b>seeking full-time opportunities</b> and will be available for employment upon graduation.
 <br>
-I approach every project with <b>dedication, curiosity, and attention to detail</b>. <br>
+I approach every project with <b>dedication, curiosity, and attention to detail</b>.
 Throughout my academic and personal projects, I have demonstrated the ability to quickly adapt 
 to new technologies and tackle challenging problems. <br>
 My primary interest lies in <b>gameplay programming</b>, where I enjoy combining technical knowledge with creativity to find the best solutions.<br>
@@ -48,11 +48,12 @@ Last but not least, I practice <b>aerial arts</b>. It is my favorite way to chal
 
 <div class="about-gallery">
 
-  <img src="{{ site.baseurl }}/images/gallery/1.jpg" alt="">
-  <img src="{{ site.baseurl }}/images/gallery/2.jpg" alt="">
-  <img src="{{ site.baseurl }}/images/gallery/3.jpg" alt="">
-  <img src="{{ site.baseurl }}/images/gallery/4.jpg" alt="">
-  <img src="{{ site.baseurl }}/images/gallery/5.jpg" alt="">
-  <img src="{{ site.baseurl }}/images/gallery/6.jpg" alt="">
+  <img src="{{ site.baseurl }}/images/gallery/1.jpg" alt="Me playing the piano dressed as Hornet from Hollow Knight: Silksong">
+  <img src="{{ site.baseurl }}/images/gallery/2.jpg" alt="A crochet plush of the Knight from Hollow Knight I made">
+  <img src="{{ site.baseurl }}/images/gallery/3.jpg" alt="A picture of me during an aerial silks performance">
+  <img src="{{ site.baseurl }}/images/gallery/4.jpg" alt="A cake I made based on the pokémon Dugtrio Alola">
+  <img src="{{ site.baseurl }}/images/gallery/5.jpg" alt="A picture of me cosplaying Basil from Omori">
+  <img src="{{ site.baseurl }}/images/gallery/6.jpg" alt="Two crochet plushes of the pokémon Drifloon">
+  <img src="{{ site.baseurl }}/images/gallery/7.jpg" alt="A paper figure of Little Ica from Honkai: Star Rail">
 
 </div>
