@@ -22,11 +22,11 @@ permalink: /aboutme/
       </p>
 
       <p>
-        My passion for games began early. At three years old, I was already playing Crash Bandicoot on the original PlayStation, and my fascination with video games has only grown since then.<br>
+        My passion for games began early. At three years old, I was already playing Crash Bandicoot on the PlayStation, and my fascination with video games has only grown since then.<br>
 
         What has always captivated me about games is their <b>unique ability to combine technology, art, design, music, and storytelling into a single interactive medium</b>. Every game leaves a lasting impact on its players and in its way it makes history.<br>
         As I grew older, I realized that simply playing games was no longer enough. I wanted to understand how they worked, create my own experiences, and contribute to the industry that had inspired me for so many years. That desire ultimately led me to specialize in game development.<br>
-        Picking a favorite game is nearly impossible, but among my personal favorites are, but in my top ten you can surely find <b>Bloodborne, Super Paper Mario, Persona 5, Crash Bandicoot 2: Cortex Strikes Back, Clair Obscure: Expedition 33, Hollow Knight, Omori and Celeste</b>.
+        Picking a favorite game is nearly impossible, but among my personal favorites are <b>999: Nine Hours, Nine Persons, Nine Doors, Bloodborne, Super Paper Mario, Persona 5, Crash Bandicoot 2: Cortex Strikes Back, Clair Obscure: Expedition 33, Hollow Knight, Omori and Celeste</b>.
       </p>
   </div>
 
