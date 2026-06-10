@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: Hey there, I'm Ferdinando!
 permalink: /aboutme/
 ---
 
@@ -9,7 +9,6 @@ permalink: /aboutme/
   <img src="{{ site.baseurl }}/images/me.jpg" alt="My photo" class="about-photo">
 
   <div class="about-text">
-    <h2>Hey there, I'm Ferdinando!</h2>
     <p>
 I am a 24-year-old <b>game programmer</b> currently completing my M.Sc. in Computer Science, 
 with an <b>expected graduation date of September 2026</b>. <br>
