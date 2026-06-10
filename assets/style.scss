@@ -574,20 +574,31 @@ Modules - reusable parts of our design
 .about-grid {
     display: grid;
     grid-template-columns: 260px 1fr;
+    grid-template-areas:
+        "photo bio" "hobbyimg hobbytext";
     column-gap: 40px;
     row-gap: 50px;
     align-items: start;
 }
 
+.about-photo {
+    grid-area: photo;
+}
+
 .intro-text {
-    grid-column: 2;
-    grid-row: 1;
+    grid-area: bio;
+}
+
+.hobby-images {
+    grid-area: hobbyimg;
+}
+
+.hobbies-text {
+    grid-area: hobbytext;
 }
 
 /* PROFILE IMAGE */
 .about-photo {
-    grid-column: 1;
-    grid-row: 1;
     width: 240px;
     height: auto;
     margin-top: 18px;
@@ -595,8 +606,6 @@ Modules - reusable parts of our design
 
 /* HOBBY IMAGES GRID */
 .hobby-images {
-    grid-column: 1;
-    grid-row: 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -605,8 +614,6 @@ Modules - reusable parts of our design
 }
 
 .hobbies-text {
-    grid-column: 2;
-    grid-row: 2;
     align-self: flex-start;
 }
 
@@ -620,18 +627,14 @@ Modules - reusable parts of our design
 
 /* MOBILE */
 @media (max-width: 768px) {
-
     .about-grid {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "photo" "bio" "hobbyimg" "hobbytext";
     }
 
-    .about-photo,
-    .intro-text,
-    .hobby-images,
-    .hobbies-text {
-        grid-column: 1;
-        grid-row: auto;
-        text-align: center;
+    .about-photo {
+        margin: 0 auto;
     }
 }
 
