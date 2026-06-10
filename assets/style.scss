@@ -560,9 +560,10 @@ Modules - reusable parts of our design
     }
 
     .about-photo {
-        height: 180px;
+        width: 240px;
+        max-width: 40vw;
+        height: auto;
     }
-}
 
 /* ===== SECTION TEXT ===== */
 .about-section {
