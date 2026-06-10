@@ -453,45 +453,28 @@ nav {
 }
 
 
-
-footer {
-    padding: 30px 0;
-    text-align: center;
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
 
-.footer-text {
-    margin-bottom: 12px;
-    color: #666;
-    font-size: 16px;
-}
-
-.footer svg,
-.footer .svg-icons,
-.footer ul {
+.footer-icons {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 14px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    flex-wrap: wrap;
 }
 
-.footer a {
+.footer-icons a {
     display: inline-flex;
     align-items: center;
-}
-
-.footer svg {
     transition: transform 0.2s ease;
 }
 
-.footer svg:hover {
+.footer-icons a:hover {
     transform: translateY(-2px);
 }
 
@@ -610,7 +593,7 @@ Modules - reusable parts of our design
 /* HOBBY IMAGES GRID */
 .hobby-images {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     width: 100%;
     max-width: 320px;
