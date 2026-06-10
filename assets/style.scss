@@ -458,6 +458,31 @@ footer {
   text-align: center;
 }
 
+.footer-text {
+    margin-bottom: 12px;
+    color: #666;
+    font-size: 16px;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #111;
+    color: white !important;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.back-to-top:hover {
+    background: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body:after {
     background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
     width: 100%;

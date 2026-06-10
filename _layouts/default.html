@@ -17,7 +17,7 @@
     {% include analytics_head.html %}
 </head>
 
-  <body>
+  <body id="top">
     <div id="bar"></div>
     <div class="wrapper-container">
       <div class="wrapper-masthead">
@@ -62,11 +62,17 @@
       </div>
 
       <div class="wrapper-footer">
-        <div class="container">
-          <footer class="footer">
-            {% include svg-icons.html %}
-          </footer>
-        </div>
+          <div class="container">
+              <footer class="footer">
+
+                  <p class="footer-text">You can also find me here</p>
+
+                  {% include svg-icons.html %}
+
+                  <a href="#top" class="back-to-top">↑ Back to Top</a>
+
+              </footer>
+          </div>
       </div>
     </div>
 
