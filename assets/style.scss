@@ -557,19 +557,13 @@ Modules - reusable parts of our design
 
 /* ===== ABOUT INTRO SECTION ===== */
 .about-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 260px 1fr;
     gap: 40px;
-    align-items: flex-start;
+    align-items: start;
 }
 
-/* LEFT SIDE */
-.about-left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* RIGHT SIDE */
+.about-left,
 .about-right {
     display: flex;
     flex-direction: column;
@@ -585,15 +579,18 @@ Modules - reusable parts of our design
 /* HOBBY IMAGES GRID */
 .hobby-images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    width: 240px; /* matches profile image width */
+    width: 100%;
+    max-width: 320px;
 }
 
 .hobby-images img {
     width: 100%;
+    aspect-ratio: 1 / 1; /* forces square consistency */
+    object-fit: cover; /* crops instead of stretching */
     border-radius: 6px;
-    object-fit: cover;
+    display: block;
 }
 
 /* MOBILE */
