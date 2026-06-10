@@ -41,6 +41,7 @@ permalink: /aboutme/
     <img src="{{ site.baseurl }}/images/gallery/5.jpg" alt="A picture of me cosplaying Basil from Omori">
     <img src="{{ site.baseurl }}/images/gallery/6.jpg" alt="Two crochet plushes of the pokémon Drifloon">
     <img src="{{ site.baseurl }}/images/gallery/7.jpg" alt="A paper figure of Little Ica from Honkai: Star Rail">
+    <img src="{{ site.baseurl }}/images/gallery/8.jpg" alt="A picture of me during an aerial trapeze performance">
 
   </div>
   
