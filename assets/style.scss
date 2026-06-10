@@ -530,6 +530,21 @@ Modules - reusable parts of our design
 
 -------------------------------- */
 
+.resume-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 20px 0;
+    background-color: #111;
+    color: white !important;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.resume-button:hover {
+    background-color: #333;
+}
+
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
