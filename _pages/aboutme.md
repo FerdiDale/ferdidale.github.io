@@ -6,27 +6,9 @@ permalink: /aboutme/
 <div class="about-grid">
 
   <!-- LEFT COLUMN -->
-  <div class="about-left">
+   <div class="about-row">
 
     <img src="{{ site.baseurl }}/images/me.jpg" alt="My photo" class="about-photo">
-
-      
-    <div class="hobby-images">
-
-      <img src="{{ site.baseurl }}/images/gallery/1.jpg" alt="Me playing the piano dressed as Hornet from Hollow Knight: Silksong">
-      <img src="{{ site.baseurl }}/images/gallery/2.jpg" alt="A crochet plush of the Knight from Hollow Knight I made">
-      <img src="{{ site.baseurl }}/images/gallery/3.jpg" alt="A picture of me during an aerial silks performance">
-      <img src="{{ site.baseurl }}/images/gallery/4.jpg" alt="A cake I made based on the pokémon Dugtrio Alola">
-      <img src="{{ site.baseurl }}/images/gallery/5.jpg" alt="A picture of me cosplaying Basil from Omori">
-      <img src="{{ site.baseurl }}/images/gallery/6.jpg" alt="Two crochet plushes of the pokémon Drifloon">
-      <img src="{{ site.baseurl }}/images/gallery/7.jpg" alt="A paper figure of Little Ica from Honkai: Star Rail">
-
-    </div>
-  </div>
-
-  <!-- RIGHT COLUMN -->
-  <div class="about-right">
-
     
     <div class="intro-text">
         <p>
@@ -50,6 +32,24 @@ permalink: /aboutme/
           Picking a favorite game is nearly impossible, but among my personal favorites are, but in my top ten you can surely find <b>Bloodborne, Super Paper Mario, Persona 5, Crash Bandicoot 2: Cortex Strikes Back, Clair Obscure: Expedition 33, Hollow Knight, Omori and Celeste</b>.
         </p>
     </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+   <div class="about-row">
+
+   
+    <div class="hobby-images">
+
+      <img src="{{ site.baseurl }}/images/gallery/1.jpg" alt="Me playing the piano dressed as Hornet from Hollow Knight: Silksong">
+      <img src="{{ site.baseurl }}/images/gallery/2.jpg" alt="A crochet plush of the Knight from Hollow Knight I made">
+      <img src="{{ site.baseurl }}/images/gallery/3.jpg" alt="A picture of me during an aerial silks performance">
+      <img src="{{ site.baseurl }}/images/gallery/4.jpg" alt="A cake I made based on the pokémon Dugtrio Alola">
+      <img src="{{ site.baseurl }}/images/gallery/5.jpg" alt="A picture of me cosplaying Basil from Omori">
+      <img src="{{ site.baseurl }}/images/gallery/6.jpg" alt="Two crochet plushes of the pokémon Drifloon">
+      <img src="{{ site.baseurl }}/images/gallery/7.jpg" alt="A paper figure of Little Ica from Honkai: Star Rail">
+
+    </div>
+    
 
     <div class="hobbies-text">
       <h2>My hobbies</h2>
