@@ -598,6 +598,7 @@ Modules - reusable parts of our design
     gap: 10px;
     width: 100%;
     max-width: 320px;
+    justify-self: center;
 }
 
 .hobby-images img {
@@ -610,13 +611,40 @@ Modules - reusable parts of our design
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .about-grid {
+
+    .about-row {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .row-profile {
+        display: grid;
+        grid-template-areas:
+            "photo" "bio";
+    }
+
+    .row-hobbies {
+        display: grid;
+        grid-template-areas:
+            "imgs" "text";
+    }
+
+    .about-photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .intro-text {
+        grid-area: bio;
     }
 
     .hobby-images {
-        max-width: 100%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-area: imgs;
+        margin: 0 auto;
+    }
+
+    .hobbies-text {
+        grid-area: text;
     }
 }
 

@@ -6,7 +6,7 @@ permalink: /aboutme/
 <div class="about-grid">
 
   <!-- LEFT COLUMN -->
-   <div class="about-row">
+   <div class="about-row row-profile">
 
     <img src="{{ site.baseurl }}/images/me.jpg" alt="My photo" class="about-photo">
     
@@ -35,7 +35,7 @@ permalink: /aboutme/
   </div>
 
   <!-- RIGHT COLUMN -->
-   <div class="about-row">
+   <div class="about-row row-hobbies">
 
    
     <div class="hobby-images">
