@@ -574,10 +574,16 @@ Modules - reusable parts of our design
     display: grid;
     grid-template-columns: 260px 1fr;
     gap: 40px;
-    align-items: start;
+    align-items: stretch;
 }
 
-.about-left,
+.about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .about-right {
     display: flex;
     flex-direction: column;
