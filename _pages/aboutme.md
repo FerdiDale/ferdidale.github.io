@@ -4,27 +4,40 @@ title: About Me
 permalink: /aboutme/
 ---
 
-Hi there! My name is Ferdinando
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+<div class="about-intro">
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
+  <img src="{{ site.baseurl }}/images/me.jpg" alt="My photo" class="about-photo">
 
-## Features
+  <div class="about-text">
+    <h2>Hello, I'm {{ site.name }}</h2>
+    <p>
+      I am a gameplay programmer and game developer passionate about
+      interactive systems, physics-based gameplay, and visual storytelling.
+    </p>
 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+    <p>
+      I enjoy working on systems programming, shaders, and game feel,
+      and I love turning technical ideas into playable experiences.
+    </p>
+  </div>
 
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+</div>
+
+<div class="about-section">
+  <h2>What I do</h2>
+  <p>
+    Add your longer bio here — your experience, tools, engines, interests,
+    research work, or game jams.
+  </p>
+</div>
+
+<div class="about-gallery">
+
+  <img src="{{ site.baseurl }}/images/gallery/1.jpg" alt="">
+  <img src="{{ site.baseurl }}/images/gallery/2.jpg" alt="">
+  <img src="{{ site.baseurl }}/images/gallery/3.jpg" alt="">
+  <img src="{{ site.baseurl }}/images/gallery/4.jpg" alt="">
+  <img src="{{ site.baseurl }}/images/gallery/5.jpg" alt="">
+  <img src="{{ site.baseurl }}/images/gallery/6.jpg" alt="">
+
+</div>
