@@ -570,6 +570,48 @@ Modules - reusable parts of our design
 
 -------------------------------- */
 
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-card {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.project-video {
+    width: 420px;
+    height: 236px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-info h2 {
+    margin-top: 0;
+    text-align: left;
+}
+
 /* ===== ABOUT INTRO SECTION ===== */
 .about-grid {
     display: grid;
