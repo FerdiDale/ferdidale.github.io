@@ -609,9 +609,9 @@ Modules - reusable parts of our design
 
 .project-video {
     width: 420px;
-    height: auto;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
+    object-fit: contain;
+    background: black;
     border-radius: 8px;
     flex: 0 0 420px;
 }
