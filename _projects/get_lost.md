@@ -1,16 +1,15 @@
 ---
 layout: project
 title: Get Lost
-duration: 6 months
-engine: Unreal Engine 5
-languages: C++, Blueprints
-role: Gameplay Programmer
-video: /videos/getlost.mp4
-thumbnail: /images/getlost-banner.jpg
+duration: 2 months
+tools: Java, LiquidFun
+role: Game Designer and Programmer
+video: /videos/GetLostTrailer.mp4
+thumbnail: /images/GetLostCover.jpg
 technologies:
-  - Unreal Engine 5
-  - C++
-  - Gameplay Programming
-  - AI
+  - Procedural Generation
+  - Layout Consistency
+  - Object Pooling
+  - Accelerometer input
 order: 1
 ---

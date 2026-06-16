@@ -6,8 +6,6 @@ title: Projects
 
 <div class="projects-list">
 
-<p>Projects found: {{ site.projects.size }}</p>
-
 {% for project in site.projects %}
 
 <a href="{{ project.url | relative_url }}"
