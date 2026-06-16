@@ -603,11 +603,8 @@ Modules - reusable parts of our design
 }
 
 .project-video {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 100%;
-    overflow: hidden;
+    width: 420px;
+    height: 236px;
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
@@ -617,7 +614,6 @@ Modules - reusable parts of our design
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 0;
 }
 
 .project-info h2 {
