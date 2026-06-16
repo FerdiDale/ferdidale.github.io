@@ -570,6 +570,13 @@ Modules - reusable parts of our design
 
 -------------------------------- */
 
+
+/* --------------------------------
+
+    PROJECTS tab
+
+-------------------------------- */
+
 .projects-list {
     display: flex;
     flex-direction: column;
@@ -611,6 +618,45 @@ Modules - reusable parts of our design
     margin-top: 0;
     text-align: left;
 }
+
+/* ===== PROJECT LAYOUT ===== */
+
+.project-hero {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.project-media {
+    flex: 2;
+}
+
+.project-media video {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+.project-meta {
+    flex: 1;
+}
+
+.project-meta h1 {
+    text-align: left; /* override your global centering */
+    margin-top: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .project-hero {
+        flex-direction: column;
+    }
+}
+
+/* ===== ICONS ===== */
 
 .svg-icon.itchio {
     background-image: url('itchio.svg');

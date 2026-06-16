@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Get Lost
+platforms: Android
 duration: 2 months
 tools: Java, LiquidFun
 role: Game Designer and Programmer

@@ -2,10 +2,43 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="project-page">
 
-<video controls width="100%">
-    <source src="{{ page.video | relative_url }}">
-</video>
+    <!-- TOP SECTION: video + info side by side -->
+    <div class="project-hero">
 
-{{ content }}
+        <div class="project-media">
+            <video controls muted loop playsinline poster="{{ page.thumbnail | relative_url }}">
+                <source src="{{ page.video | relative_url }}" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="project-meta">
+
+            <h1>{{ page.title }}</h1>
+
+            <p>
+                <strong>Duration:</strong> {{ page.duration }}<br>
+                <strong>Engine:</strong> {{ page.engine }}<br>
+                <strong>Languages:</strong> {{ page.languages }}<br>
+                <strong>Role:</strong> {{ page.role }}
+            </p>
+
+            {% if page.technologies %}
+            <div class="tech-tags">
+                {% for tech in page.technologies %}
+                <span class="chip">{{ tech }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    <!-- FULL CONTENT BELOW -->
+    <div class="project-content">
+        {{ content }}
+    </div>
+
+</div>

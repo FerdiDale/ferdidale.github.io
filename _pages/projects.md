@@ -29,14 +29,17 @@ title: Projects
         <h2>{{ project.title }}</h2>
 
         <p>
-            <strong>Duration:</strong>
-            {{ project.duration }}<br>
+            <strong>Platforms:</strong>
+              {{ project.platforms }}<br>
 
-            <strong>Tools:</strong>
+            <strong>Engine and tools:</strong>
             {{ project.tools }}<br>
 
             <strong>Role:</strong>
             {{ project.role }}
+
+            <strong>Time spent on project:</strong>
+            {{ project.duration }}<br>
         </p>
 
         <div class="tech-tags">
