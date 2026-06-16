@@ -28,10 +28,19 @@ title: Projects
 
         <h2>{{ project.title }}</h2>
 
-        <p><strong>Platforms:</strong> {{ project.platforms }}</p>
-        <p><strong>Engine and tools:</strong> {{ project.tools }}</p>
-        <p><strong>Role:</strong> {{ project.role }}</p>
-        <p><strong>Time spent:</strong> {{ project.duration }}</p>
+        <p>
+            <strong>Platforms:</strong>
+              {{ project.platforms }}<br>
+
+            <strong>Engine and tools:</strong>
+            {{ project.tools }}<br>
+
+            <strong>Role:</strong>
+            {{ project.role }}<br>
+
+            <strong>Time spent on project:</strong>
+            {{ project.duration }}<br>
+        </p>
 
         <div class="tech-tags">
 
