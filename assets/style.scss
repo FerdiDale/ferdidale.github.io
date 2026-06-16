@@ -578,6 +578,7 @@ Modules - reusable parts of our design
 -------------------------------- */
 
 
+
 .projects-list {
     display: flex;
     flex-direction: column;
@@ -594,6 +595,7 @@ Modules - reusable parts of our design
     color: inherit;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    align-items: stretch;
 }
 
 .project-card:hover {
@@ -603,13 +605,17 @@ Modules - reusable parts of our design
 
 .project-video {
     width: 420px;
-    height: 236px;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
 }
 
 .project-info {
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -618,6 +624,17 @@ Modules - reusable parts of our design
 .project-info h2 {
     margin-top: 0;
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-video {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 /* ===== PROJECT LAYOUT ===== */
