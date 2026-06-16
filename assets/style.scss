@@ -616,7 +616,8 @@ Modules - reusable parts of our design
     background-image: url('itchio.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 80%;
+    border-radius: 50%;
 }
 
 /* ===== ABOUT INTRO SECTION ===== */

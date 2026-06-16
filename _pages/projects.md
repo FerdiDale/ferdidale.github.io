@@ -31,11 +31,8 @@ title: Projects
             <strong>Duration:</strong>
             {{ project.duration }}<br>
 
-            <strong>Engine:</strong>
-            {{ project.engine }}<br>
-
-            <strong>Languages:</strong>
-            {{ project.languages }}<br>
+            <strong>Tools:</strong>
+            {{ project.tools }}<br>
 
             <strong>Role:</strong>
             {{ project.role }}
