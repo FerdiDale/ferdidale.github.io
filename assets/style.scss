@@ -609,12 +609,11 @@ Modules - reusable parts of our design
 
 .project-video {
     width: 420px;
-    max-width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 8px;
-    flex-shrink: 0;
+    flex: 0 0 420px;
 }
 
 .project-info {
