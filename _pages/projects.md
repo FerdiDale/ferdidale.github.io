@@ -12,11 +12,12 @@ title: Projects
    class="project-card">
 
     <video
-        class="project-video"
-        muted
-        loop
-        preload="metadata"
-        poster="{{ project.thumbnail | relative_url }}">
+      class="project-video"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="{{ project.thumbnail | relative_url }}">
 
         <source
             src="{{ project.video | relative_url }}"

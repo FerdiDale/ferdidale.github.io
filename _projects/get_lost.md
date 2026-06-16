@@ -7,9 +7,14 @@ role: Game Designer and Programmer
 video: /videos/GetLostTrailer.mp4
 thumbnail: /images/GetLostCover.jpg
 technologies:
-  - Procedural Generation
-  - Layout Consistency
-  - Object Pooling
-  - Accelerometer input
+  - Procedural generation
+  - Layout consistency
+  - Object pooling
+  - Accelerometer input handling
 order: 1
 ---
+
+<div>
+    <h1>Prova</h1>
+    <p>Prova p</p>
+</div>
