@@ -612,6 +612,13 @@ Modules - reusable parts of our design
     text-align: left;
 }
 
+.svg-icon.itchio {
+    background-image: url('itchio.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 /* ===== ABOUT INTRO SECTION ===== */
 .about-grid {
     display: grid;

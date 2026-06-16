@@ -17,67 +17,87 @@
     {% include analytics_head.html %}
 </head>
 
-  <body id="top">
+<body id="top">
     <div id="bar"></div>
     <div class="wrapper-container">
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" alt="{{ site.title }}" /></a>
 
-            <div class="site-info">
-              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">{{ site.description }}</p> 
+                    <div class="site-info">
+                        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                        <p class="site-description">{{ site.description }}</p>
+                    </div>
+
+                    <nav>
+                        <a href="{{ site.baseurl }}/"
+                           class="{% unless page.url contains '/resume' or page.url contains '/aboutme' or page.url contains '/contact' %}active{% endunless %}">
+                            Projects
+                        </a>
+
+                        <a href="{{ site.baseurl }}/aboutme"
+                           class="{% if page.url contains '/aboutme' %}active{% endif %}">
+                            About Me
+                        </a>
+
+                        <a href="{{ site.baseurl }}/resume"
+                           class="{% if page.url contains '/resume' %}active{% endif %}">
+                            Resume
+                        </a>
+
+                        <a href="{{ site.baseurl }}/contact"
+                           class="{% if page.url contains '/contact' %}active{% endif %}">
+                            Contact
+                        </a>
+                    </nav>
+                </header>
             </div>
-
-            <nav>
-                <a href="{{ site.baseurl }}/"
-                   class="{% unless page.url contains '/resume' or page.url contains '/aboutme' or page.url contains '/contact' %}active{% endunless %}">
-                    Projects
-                </a>
-
-                <a href="{{ site.baseurl }}/aboutme"
-                   class="{% if page.url contains '/aboutme' %}active{% endif %}">
-                    About Me
-                </a>
-
-                <a href="{{ site.baseurl }}/resume"
-                   class="{% if page.url contains '/resume' %}active{% endif %}">
-                    Resume
-                </a>
-
-                <a href="{{ site.baseurl }}/contact"
-                   class="{% if page.url contains '/contact' %}active{% endif %}">
-                    Contact
-                </a>
-            </nav>
-          </header>
         </div>
-      </div>
 
-      <div class="wrapper-main">
-        <div id="main" role="main" class="container">
-          {{ content }}
+        <div class="wrapper-main">
+            <div id="main" role="main" class="container">
+                {{ content }}
+            </div>
         </div>
-      </div>
 
-      <div class="wrapper-footer">
-          <div class="container">
-              <footer class="footer">
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
 
-                  <p class="footer-text">You can also find me here</p>
+                    <p class="footer-text">You can also find me here</p>
 
-                  <div class="footer-icons">
-                      {% include svg-icons.html %}
-                  </div>
+                    <div class="footer-icons">
+                        {% include svg-icons.html %}
+                    </div>
 
-                  <a href="#top" class="back-to-top">↑ Back to Top</a>
+                    <a href="#top" class="back-to-top">↑ Back to Top</a>
 
-              </footer>
-          </div>
-      </div>
+                </footer>
+            </div>
+        </div>
     </div>
 
     {% include analytics.html %}
-  </body>
+
+
+    <script>
+        document.querySelectorAll('.project-card').forEach(card => {
+
+            console.log("Project hover script loaded");
+
+            const video = card.querySelector('video');
+
+            card.addEventListener('mouseenter', () => {
+                video.play();
+            });
+
+            card.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+
+        });
+    </script>
+</body>
 </html>
