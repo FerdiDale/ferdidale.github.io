@@ -609,11 +609,11 @@ Modules - reusable parts of our design
 
 .project-video {
     width: 420px;
-    aspect-ratio: 16 / 9;
-    object-fit: contain;
-    background: black;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     flex: 0 0 420px;
+    display: block;
 }
 
 .project-info {
@@ -637,7 +637,7 @@ Modules - reusable parts of our design
 
     .project-video {
         width: 100%;
-        max-width: 100%;
+        flex: none;
     }
 }
 
