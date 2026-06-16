@@ -6,9 +6,8 @@ title: Projects
 
 <div class="projects-list">
 
-{% assign sorted_projects = site.projects | sort: "order" %}
 
-{% for project in sorted_projects %}
+{% for project in site.projects %}
 
 <a href="{{ project.url | relative_url }}"
    class="project-card">
@@ -49,7 +48,7 @@ title: Projects
             <span class="chip">{{ tech }}</span>
         {% endfor %}
 
-</div>
+      </div>
 
     </div>
 
