@@ -737,6 +737,15 @@ Modules - reusable parts of our design
     grid-area: hobbytext;
 }
 
+pre {
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #1e1e1e;
+}
+
+
 /* PROFILE IMAGE */
 .about-photo {
     width: 240px;

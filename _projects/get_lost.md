@@ -45,24 +45,37 @@ order: 2
     This guarantees that the same room template will never appear as the same room to the player and was exactly what I was looking for.
     Additional informations about the (quite more complex) system used by <b>Spelunky</b> can be found <a href="https://tinysubversions.com/spelunkyGen2/">here</a>.
     </p>
-    <p>I then wrote a template for each of the possible layouts for a <i>ChunkPiece</i>, obtaining JSON files like this one describing the L shaped layout:
+    <p>I then wrote a template for each of the possible layouts for a <i>ChunkPiece</i>, obtaining JSON files like this one describing the T shaped layout:
     <pre><code>{
-   "layout": [[1,1,1,2,0,0,0,0,2,1,1,1],
-              [1,1,1,2,0,3,0,0,2,1,1,1],
+   "layout": [[1,1,1,1,1,1,1,1,1,1,1,1],
+              [1,1,1,1,1,1,1,1,1,1,1,1],
+              [1,1,1,1,1,1,1,1,1,1,1,1],
+              [2,2,2,2,2,2,2,2,2,2,2,2],
+              [0,0,0,0,0,0,0,0,0,0,0,0],
+              [0,0,3,0,0,0,0,0,0,3,0,0],
+              [0,0,0,0,0,0,0,0,0,0,0,0],
+              [0,0,0,0,0,3,3,0,0,0,0,0],
+              [2,2,2,0,0,0,0,0,0,2,2,2],
               [1,1,1,2,0,0,0,0,2,1,1,1],
-              [1,1,1,2,0,0,0,0,0,2,2,2],
-              [1,1,1,2,0,0,0,3,0,0,0,0],
-              [1,1,1,2,0,0,0,0,0,0,0,0],
-              [1,1,1,2,0,0,0,0,0,3,0,0],
-              [1,1,1,2,0,0,0,0,0,0,0,0],
-              [1,1,1,0,2,2,2,2,2,2,2,2],
-              [1,1,1,1,1,1,1,1,1,1,1,1],
-              [1,1,1,1,1,1,1,1,1,1,1,1],
-              [1,1,1,1,1,1,1,1,1,1,1,1]],
-    "spawnPoint": false
+              [1,1,1,2,0,0,0,0,2,1,1,1],
+              [1,1,1,2,0,0,0,0,2,1,1,1]],
+    "spawnPoint": true
 }</code></pre>
     As you can probably imagine, "0"s and "1"s are <b>static tiles</b> (respectively empty spaces and blocks), while "2"s and "3"s are <b>probabilistic tiles</b> (respectively spikes and bumpers).
     Each <i>Chunk</i> can be in easy, medium or hard mode and the <b>probability</b> associated to the tiles is proporional to this <b>difficulty</b> property, granting more obstacles in harder <i>Chunks</i>.
-    It is important to note that this <b>data driven approach</b> has been used also to <b>infer the costraints</b> associated to each layout, computed verifying which sides of a template are blocked off by "1"s. 
+    It is important to note that this <b>data driven approach</b> has been used also to <b>infer the costraints</b> associated to each layout, computed verifying which sides of a template are blocked off by "1"s.
+    <div>
+      <img src="{{ site.baseurl }}/images/screenshots/TShapeEasy.jpg">
+      <img src="{{ site.baseurl }}/images/screenshots/TShapeMedium.jpg">
+      <img src="{{ site.baseurl }}/images/screenshots/TShapeHard.jpg">
+    </div>
     </p>
+    <h3>The dynamic obstacles</h3>
+    As for the dynamic obstacles, the procedural generation algorithm is quite simple. Each layout has a series of possible obstacles associated and based on the Chunk's difficulty, a number of them is chosen and generated. To enhance variety, each obstacle can be chosen with some <b>random characteristics</b> and is placed in the ChunkPiece randomly within a room of sensible spots. Furthermore, many obstacles exist in an <b>"automated" mode</b> or a <b>"free" mode</b>. Whereas "automated" obstacles are characterized by a motor that makes them move in a pattern, "free" obstacles move with the world's gravity, following the tilt of the player's device.
+    The majority of dynamic obstacles are made of blocks and spikes connected by <b>joints</b>.
+    <div>
+      <img src="{{ site.baseurl }}/images/screenshots/EasyDynamic.jpg">
+      <img src="{{ site.baseurl }}/images/screenshots/MediumDynamic.jpg">
+      <img src="{{ site.baseurl }}/images/screenshots/HardDynamic.jpg">
+    </div>
 </div>
