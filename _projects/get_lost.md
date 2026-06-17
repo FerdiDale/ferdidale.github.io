@@ -7,6 +7,7 @@ tools: Java, LiquidFun
 role: Game Designer and Programmer
 video: /videos/GetLostTrailer.mp4
 thumbnail: /images/GetLostCover.jpg
+link: https://ferdidale.itch.io/get-lost
 technologies:
   - Procedural generation
   - Layout consistency
