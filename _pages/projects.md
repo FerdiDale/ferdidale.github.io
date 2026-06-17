@@ -40,6 +40,9 @@ title: Projects
 
             {% if project.duration %}<strong>Time spent on project:</strong>
             {{ project.duration }}<br>{% endif %}
+
+            {% if project.status %}<strong>Status:</strong>
+            {{ project.status }}<br>{% endif %}
         </p>
 
         {% if page.technologies %}

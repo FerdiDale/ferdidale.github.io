@@ -8,6 +8,7 @@ role: Game Programmer
 video: /videos/GetLostTrailer.mp4
 thumbnail: /images/GetLostCover.jpg
 link: https://ferdidale.itch.io/get-lost
+status: Ongoing development
 technologies:
   - Procedural generation
   - Layout consistency
