@@ -29,7 +29,7 @@ order: 2
     </p>
     <p>To enable the use of complex obstacles in a sensible positioning in relation to the surrounding environment, I decided to build the maze as a composition of simple square rooms I will refer to as <i>ChunkPieces</i>.
     The possible layouts for each <i>ChunkPiece</i> have been chosen so that it is impossible to generate a closed shape. This guarantees the maze generated will be fully explorable. The specific shapes I chose can be seen in this note I took early on in the design phase:
-    <img src="{{ site.baseurl }}/images/notes/wfc_cropped.jpg">
+    <img src="{{ site.baseurl }}/images/notes/wfc_shapes.jpg">
 
       
     
