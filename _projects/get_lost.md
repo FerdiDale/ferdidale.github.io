@@ -64,7 +64,7 @@ order: 2
     As you can probably imagine, "0"s and "1"s are <b>static tiles</b> (respectively empty spaces and blocks), while "2"s and "3"s are <b>probabilistic tiles</b> (respectively spikes and bumpers).
     Each <i>Chunk</i> can be created in easy, medium or hard mode and the <b>probability</b> associated to the tiles is proportional to this <b>difficulty</b> property, granting more obstacles in harder <i>Chunks</i>.
     It is important to note that this <b>data driven approach</b> has been used also to <b>infer the costraints</b> associated to each layout, computed verifying which sides of a template are blocked off by "1"s.
-    <div screenshot-getlost-images>
+    <div class="screenshot-getlost-images">
       <img src="{{ site.baseurl }}/images/screenshots/TShapeEasy.jpg">
       <img src="{{ site.baseurl }}/images/screenshots/TShapeMedium.jpg">
       <img src="{{ site.baseurl }}/images/screenshots/TShapeHard.jpg">
