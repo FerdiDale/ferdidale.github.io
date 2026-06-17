@@ -692,6 +692,7 @@ Modules - reusable parts of our design
 @media (max-width: 768px) {
     .project-hero {
         flex-direction: column;
+        align-items: center;
     }
 }
 

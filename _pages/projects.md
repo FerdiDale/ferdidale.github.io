@@ -29,16 +29,16 @@ title: Projects
         <h2>{{ project.title }}</h2>
 
         <p>
-            {% if page.platforms %}<strong>Platforms:</strong>
+            {% if project.platforms %}<strong>Platform(s):</strong>
               {{ project.platforms }}<br>{% endif %}
 
-            {% if page.tools %}<strong>Engine and tools:</strong>
+            {% if project.tools %}<strong>Engine and tools:</strong>
             {{ project.tools }}<br>{% endif %}
 
-            {% if page.role %}<strong>Role:</strong>
+            {% if project.role %}<strong>Role:</strong>
             {{ project.role }}<br>{% endif %}
 
-            {% if page.duration %}<strong>Time spent on project:</strong>
+            {% if project.duration %}<strong>Time spent on project:</strong>
             {{ project.duration }}<br>{% endif %}
         </p>
 
