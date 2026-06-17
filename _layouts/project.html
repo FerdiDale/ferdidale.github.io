@@ -20,16 +20,16 @@ layout: default
 
             <p>
                 {% if page.platforms %}<strong>Platforms:</strong>
-                {{ project.platforms }}<br>{% endif %}
+                {{ page.platforms }}<br>{% endif %}
 
                 {% if page.tools %}<strong>Engine and tools:</strong>
-                {{ project.tools }}<br>{% endif %}
+                {{ page.tools }}<br>{% endif %}
 
                 {% if page.role %}<strong>Role:</strong>
-                {{ project.role }}<br>{% endif %}
+                {{ page.role }}<br>{% endif %}
 
                 {% if page.duration %}<strong>Time spent on project:</strong>
-                {{ project.duration }}<br>{% endif %}
+                {{ page.duration }}<br>{% endif %}
             </p>
 
             {% if page.technologies %}
@@ -40,7 +40,7 @@ layout: default
             </div>
             {% endif %}
 
-            <a href="{{ page.link }}" class="download-button">Download here</a>
+            <a href="{{ page.link }}" class="project-download-button" target="_blank">Download here</a>
 
         </div>
 
