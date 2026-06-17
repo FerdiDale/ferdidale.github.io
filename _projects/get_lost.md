@@ -16,7 +16,18 @@ technologies:
   - Accelerometer input handling
 order: 2
 ---
+<div>
+<h1>Short description</h1>
+<p>The core of this game resides in the <b>procedurally generated maze</b>. Specifically, three aspects of the maze are generated:
+     Super Monkey Ball meets the  Bounce series by Nokia in this simple but weird arcade game for mobile focusing on the use of the accelerometer.<br><br>
 
+    Your goal is to get as far as you can from the spawn point in a procedurally generated maze, paying attention to what you're bumping into.<br>
+    You will face obstacles moving in patterns or according to physics, that you have to approach differently, if you want to get by without losing health.<br>
+    If time runs out or you lose all your health it's game over, but don't worry,  you will find pickups to gain health, time or special powerups!<br><br>
+
+    This game has been mainly developed by me, but the full list of credits can be found in-game.<br><br>
+    </p>
+</div>
 <div>
     <h1>Relevant contributions</h1>
     <h2>Procedural generation</h2>
