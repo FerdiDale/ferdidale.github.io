@@ -1,9 +1,9 @@
 ---
 layout: project
 title: Snake
-platforms: Pico8
+platforms: Pico-8
 duration:
-tools: Pico 8, Lua [Pico8 subset]
+tools: Pico-8, Lua [Pico-8 subset]
 role: Game Programmer
 video: /videos/GetLostTrailer.mp4
 thumbnail: /images/GetLostCover.jpg
