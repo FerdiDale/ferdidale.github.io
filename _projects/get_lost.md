@@ -32,12 +32,12 @@ order: 2
     The possible layouts for each <i>ChunkPiece</i> have been chosen so that it is impossible to generate a closed shape. This guarantees the maze generated will always be fully explorable. The specific shapes I chose can be seen in this note I took early on during the design phase:
     <img src="{{ site.baseurl }}/images/notes/wfc_shapes.jpg">    
     </p>
-    <p>The main algorithm generating <i>ChunkPieces</i> is based on <b>Wave Function Collapse</b> and works on a grid of <i>ChunkPieces</i> I will refer to as <i>Chunk</i>. <b>WFC</b> works associating a subset of possible states to each tile and choosing for them randomly a single state in this subset (<b>collapsing the tile</b> in it). Each state is characterized by local constraints that are used to update the possible states of the adjacing tiles, treating thus the procedural generation like a Constraint Satisfaction Problem.
+    <p>The main algorithm generating <i>ChunkPieces</i> is based on <b>Wave Function Collapse</b> and works on a grid of <i>ChunkPieces</i> I will refer to as <i>Chunk</i>. <b>WFC</b> works associating a subset of possible states to each tile and choosing for them randomly a single state in this subset (<b>collapsing the tile</b> in it). Each state is characterized by local constraints that are used to update the possible states of the adjacent tiles, treating thus the procedural generation like a Constraint Satisfaction Problem.
     </p>
     <p>
-     <b>Tipically the constraints are propagated forward</b>: whenever a tile is collapsed into one state, its costraints are propagated to the adjacing tiles.
-     In this game the layout of a <i>Chunk</i> is conditioned by the layout of the adjacing <i>Chunks</i>, thus using a forward propagation approach during the creation of a <i>Chunk</i> would mean creating the adjacing ones beforehand. This could lead to the accumulation of a lot of useless data belonging to "phantom" <i>Chunks</i>. This is because the number of "phantom" <i>Chunks</i> is linear to the number of <i>Chunks</i> effectively visited by the player.<br>
-     Therefore, <b>I decided to use a backward propagation approach</b>: each time the algorithm wants to assign a state to a tile, its possible states are computed checking the costraints of the adjacing tiles. This way there is no need to create extra data and the system only takes care of the "real" <i>Chunks</i>.
+     <b>Tipically the constraints are propagated forward</b>: whenever a tile is collapsed into one state, its costraints are propagated to the adjacent tiles.
+     In this game the layout of a <i>Chunk</i> is conditioned by the layout of the adjacent <i>Chunks</i>, thus using a forward propagation approach during the creation of a <i>Chunk</i> would mean creating the adjacent ones beforehand. This could lead to the accumulation of a lot of useless data belonging to "phantom" <i>Chunks</i>. This is because the number of "phantom" <i>Chunks</i> is linear to the number of <i>Chunks</i> effectively visited by the player.<br>
+     Therefore, <b>I decided to use a backward propagation approach</b>: each time the algorithm wants to assign a state to a tile, its possible states are computed checking the costraints of the adjacent tiles. This way there is no need to create extra data and the system only takes care of the "real" <i>Chunks</i>.
     </p>
     <h3>The static obstacles</h3>
     <p>As for the static obstacles, my goal was to place spikes and bumpers in a sensible but not repetitive way, to provide an entertaining experience. I drew inspiration from the deeply documented procedural generation system used in <b>Spelunky</b>, specifically from the algorithm generating the rooms' layout. Each room in <b>Spelunky</b> has a number of different templates to choose from and each one of these is a grid of tiles represented by characters.<br>
@@ -78,4 +78,19 @@ order: 2
       <img src="{{ site.baseurl }}/images/screenshots/MediumDynamic.jpg">
       <img src="{{ site.baseurl }}/images/screenshots/HardDynamic.jpg">
     </div>
+    <h3>Consistency and optimizations</h3>
+    <p>
+    The procedural generation in this game presents a key factor to be considered: a player <b>can always backtrack</b> to previously visited <i>Chunks</i> and, since we <b>can't save the whole maze</b> in memory, they have to be generated every time in a consistent manner.
+    Tipically this problem is solved using a <b>set seed</b>, guaranteeing consistency in the random number generator used. Unfortunately, the algorithm for layout generation I programmed takes into account the constraints derived by adjacent <i>Chunks</i>, thus even working with a <b>set seed</b>, the <b>order</b> in which <i>Chunks</i> are explored would result in an <b>overall different maze layout</b>.
+    </p>
+    <p>
+    To bypass this problem, each time a <i>Chunk</i> is <b>collapsed into a layout</b>, it is <b>permanently saved</b>, guaranteeing its consistency. This isn't particularly space consuming, since a layout ultimately is nothing other than an integer (or to be precise a reference to a static layout object). All the other characteristics of a <i>ChunkPiece</i>, such as <b>static and dynamic obstacles</b>, are generated each time using a <b>set seed</b>, since they aren't influenced by external factors.
+    </p>
+    <p>
+    Furthermore, since there can be quite a few objects on screen, only the <i>ChunkPiece</i> <b>currently navigated</b> by the player and its adjacent ones are <b>rendered on screen</b> and <b>simulated</b>. Specifically, only the <b>collisions</b> in the <b>central <i>ChunkPiece</i></b> are active, since they are the only ones the player can directly interact with.
+    Each time the player moves from a <i>ChunkPiece</i> to another, the ones forward are immediately built and rendered while the ones behind are set to be removed. To <b>prevent lag spikes</b>, the <i>ChunkPieces</i> are not deleted in a single frame, but instead are <b>marked and then deleted singularly</b> per frame.
+    </p>
+    <p>
+    Finally, since this game is developed in Java, one of my goals was to keep the number of objects eligible for <b>garbage collection</b> as low as possible at all times. This, along with the need to avoid spawning large numbers of identical game objects such as blocks, spikes, and bumpers, led to the extensive use of <b>object pooling</b>.
+    </p>
 </div>
