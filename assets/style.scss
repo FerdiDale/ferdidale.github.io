@@ -542,6 +542,11 @@ body:after {
   line-height: 1.2;
 }
 
+.post,
+.page {
+    overflow-x: hidden;
+}
+
 .author_title{
   text-align: center;
   color: #939aa1;
@@ -706,6 +711,28 @@ Modules - reusable parts of our design
     border-radius: 50%;
 }
 
+.screenshot-getlost-images {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.screenshot-getlost-images img {
+    flex: 1;
+    width: 0;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .screenshot-getlost-images {
+        flex-direction: column;
+    }
+
+    .screenshot-getlost-images img {
+        width: 100%;
+    }
+}
+
 /* ===== ABOUT INTRO SECTION ===== */
 .about-grid {
     display: grid;
@@ -738,13 +765,16 @@ Modules - reusable parts of our design
 }
 
 pre {
-    overflow-x: auto;
     max-width: 100%;
-    padding: 12px;
+    overflow-x: auto;
+    white-space: pre;
     box-sizing: border-box;
-    background: #1e1e1e;
 }
 
+pre code {
+    display: block;
+    max-width: 100%;
+}
 
 /* PROFILE IMAGE */
 .about-photo {
