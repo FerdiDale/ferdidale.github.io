@@ -16,6 +16,7 @@ technologies:
   - Accelerometer input handling
 order: 2
 ---
+<!--
 <div>
 <h1>Short description</h1>
 <p>
@@ -28,6 +29,7 @@ order: 2
     This game has been mainly developed by me, but the full list of credits can be found in-game.<br><br>
 </p>
 </div>
+-->
 <div>
     <h1>Relevant contributions</h1>
     <h2>Procedural generation</h2>
