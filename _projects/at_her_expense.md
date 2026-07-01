@@ -27,7 +27,7 @@ order: 3
       loop
       playsinline
       preload="metadata"
-      src="assets/animation.mkv">
+      src="/videos/AtHerExpense/AtHerExpense_TrashCanPushing.mkv">
     </video>
     <p>
     The interactions are quite diverse: they range from simple physics-based actions, such as pushing or throwing an object, to triggering distinct subsytems.
