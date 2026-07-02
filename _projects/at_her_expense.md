@@ -24,7 +24,7 @@ order: 3
 
     <div class="video-row">
       <video
-        class="project-video"
+        class="content-video"
         muted
         loop
         autoplay
@@ -35,7 +35,7 @@ order: 3
               type="video/webm">
       </video>
       <video
-        class="project-video"
+        class="content-video"
         muted
         loop
         autoplay
@@ -53,7 +53,7 @@ order: 3
 
     <div class="video-row">
       <video
-        class="project-video"
+        class="content-video"
         muted
         loop
         autoplay
@@ -64,7 +64,7 @@ order: 3
               type="video/webm">
       </video>
       <video
-        class="project-video"
+        class="content-video"
         muted
         loop
         autoplay
@@ -86,4 +86,8 @@ order: 3
   For the sake of simplicity I avoided defining folders, since that would have required drawing overlapping windows and managing input on multiple layers. I decided to keep it simple, making the <b>windows non-blocking</b>, but <b>replacing the single window</b> on screen when a player opens multiple files in a row.
   The initial arrengement of the files and their content are defined in a <b>DataTable</b>, in line with the <b>data-driven approach</b> extensively used in the game.
     </p>
+  <h2>Dialogue system</h2>
+    <p>The game starts and ends with sections inspired by <b>visual novels</b>, where 
+    </p>
+
 </div>

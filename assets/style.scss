@@ -595,14 +595,22 @@ Modules - reusable parts of our design
     align-items: flex-start;
 }
 
+.content-video {
+    flex: 1;
+    width: 0; /* lets flex distribute the space evenly */
+    height: auto;
+    border-radius: 8px;
+}
+
 @media (max-width: 768px) {
     .video-row {
         flex-direction: column;
     }
 
-    .video-row .project-video {
+    .content-video {
         width: 100%;
     }
+}
 }
 
 
