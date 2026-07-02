@@ -25,6 +25,7 @@ order: 3
       class="project-video"
       muted
       loop
+      autoplay
       playsinline
       preload="metadata">
       <source
