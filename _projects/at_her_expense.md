@@ -87,7 +87,7 @@ order: 3
   The initial arrengement of the files and their content are defined in a <b>DataTable</b>, in line with the <b>data-driven approach</b> extensively used in the game.
     </p>
   <h2>Dialogue system</h2>
-    <p>The game starts and ends with sections inspired by <b>visual novels</b>, where 
+    <p>The game starts and ends with sections inspired by <b>visual novels</b>, where the player can read the speech 
     </p>
 
 </div>
