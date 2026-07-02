@@ -87,7 +87,10 @@ order: 3
   The initial arrengement of the files and their content are defined in a <b>DataTable</b>, in line with the <b>data-driven approach</b> extensively used in the game.
     </p>
   <h2>Dialogue system</h2>
-    <p>The game starts and ends with sections inspired by <b>visual novels</b>, where the player can read the speech 
+    <p>The game begins and ends with sections inspired by <b>visual novels</b>, where the player can "hear" the higher beings involved speaking. Although the player cannot respond to their interlocutor, the system I developed still includes a dynamic component: in the final section, the dialogue varies based on how the player has behaved throughout the game.<br>
+    The dialogue is divided into sections, each identified by a tag and linked to the tag of the following section(s). The dynamic aspect comes from associating each section with a set of conditions. This allows multiple sections to share the same ID, with the appropriate one being selected at runtime based on the game state.
+    These conditions are based on two variables: the <i>Evilness</i> value and the <i>Progress</i> value. The former is calculated by summing the evilness of the player's actions, while the latter is determined by the number of tasks the player has completed. This system enables different dialogue branches and endings depending on the player's behavior.
+    All these informations are stored in a DataTable, in line with the <b>data-driven approach</b> extensively used in the game.
     </p>
 
 </div>
