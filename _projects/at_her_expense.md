@@ -90,7 +90,7 @@ Therefore this <b>system</b> could be easily <b>extended</b> to use <b>any color
         playsinline
         preload="metadata">
         <source
-              src="/videos/AtHerExpense/AtHerExpense_CanPainting.webm"
+              src="/videos/AtHerExpense/AtHerExpense_Cleaning.webm"
               type="video/webm">
       </video>
     </div>
@@ -99,6 +99,30 @@ Therefore this <b>system</b> could be easily <b>extended</b> to use <b>any color
   For the sake of simplicity I avoided defining folders, since that would have required drawing overlapping windows and managing input on multiple layers. I decided to keep it simple, making the <b>single window on screen blocking</b>.
   The initial arrengement of the files and their content are defined in a <b>DataTable</b>, in line with the <b>data-driven approach</b> used extensively throughout the game.
     </p>
+    <div class="video-row">
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_PCBlockingWindow.webm"
+              type="video/webm">
+      </video>
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_PCInteraction2.webm"
+              type="video/webm">
+      </video>
+    </div>
 
 <h2>Quest system</h2>
     <p>Throughout the game the tasks to complete are displayed on the contract on screen, that functions as a diegetic UI. My first programming task was to design the quest system, which had to support notably:
@@ -120,13 +144,97 @@ Therefore this <b>system</b> could be easily <b>extended</b> to use <b>any color
 
   <p>The <b>architecture</b> could be easily <b>expanded</b> to support <b>dependencies between tasks</b> or <b>objectives composed of multiple sequential stages</b>, making it suitable for implementing the <b>classic quest systems</b> commonly found in <b>role-playing games</b>.</p>
 
+  <div class="video-row">
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_CrossingThreshold.webm"
+              type="video/webm">
+      </video>
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_MessingPaintings.webm"
+              type="video/webm">
+      </video>
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_UndoingPaintings.webm"
+              type="video/webm">
+      </video>
+    </div>
+
 
   <h2>Dialogue system</h2>
+  <div class="video-row">
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_DialogueBeginning.webm"
+              type="video/webm">
+      </video>
+    </div>
     <p>The game begins and ends with sections inspired by <b>visual novels</b>, where the player can "hear" the higher beings involved speaking. Although the player cannot respond to their interlocutor, the system I developed still includes a <b>dynamic component</b>: in the final section, the <b>dialogue varies based on how the player has behaved</b> throughout the game.<br>
     The dialogue is divided into <i>sections</i>, each identified by a <i>tag</i> and linked to the <i>tag</i> of the following <i>section(s)</i>. The dynamic aspect comes from <b>associating each section with a set of conditions</b>. This allows<b> multiple sections</b> to share the <b>same tag</b>, with the<b> appropriate one</b> being <b>selected at runtime</b> based on the game state.
     These conditions are based on two variables: the <i>Evilness</i> value and the <i>Progress</i> value. The former is calculated by summing the evilness of the player's actions, while the latter is determined by the number of tasks the player has completed. This system enables<b> different dialogue branches and endings</b> depending on the player's behavior.
     All these informations are stored in a <b>DataTable</b>, in line with the <b>data-driven approach</b> used extensively throughout the game. The data structure for the dialogue is much <b>simpler than the one used for the tasks</b>, as it is <b>based on static values</b>. Once the player reaches the final section, the dialogue can no longer change, because the relevant <b>values</b> have <b>already been determined</b>. As a result, the <b>dialogue structure is not a tree but rather a set of parallel sequences</b>, with the appropriate one being selected when the player reaches the end of the game.
     </p>
+    <div class="video-row">
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_Ending1.webm"
+              type="video/webm">
+      </video>
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_Ending2.webm"
+              type="video/webm">
+      </video>
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_Ending3.webm"
+              type="video/webm">
+      </video>
+    </div>
 
   
 </div>
