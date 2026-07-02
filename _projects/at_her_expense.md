@@ -125,6 +125,20 @@ Therefore this <b>system</b> could be easily <b>extended</b> to use <b>any color
     </div>
 
 <h2>Quest system</h2>
+
+<div class="video-row">
+      <video
+        class="content-video"
+        muted
+        loop
+        autoplay
+        playsinline
+        preload="metadata">
+        <source
+              src="/videos/AtHerExpense/AtHerExpense_CrossingThreshold.webm"
+              type="video/webm">
+      </video>
+    </div>
     <p>Throughout the game the tasks to complete are displayed on the contract on screen, that functions as a diegetic UI. My first programming task was to design the quest system, which had to support notably:
    <ul> 
     <li>Tasks consisting of <b>repeating any type of action <i>n</i> times</b></li> 
@@ -145,17 +159,6 @@ Therefore this <b>system</b> could be easily <b>extended</b> to use <b>any color
   <p>The <b>architecture</b> could be easily <b>expanded</b> to support <b>dependencies between tasks</b> or <b>objectives composed of multiple sequential stages</b>, making it suitable for implementing the <b>classic quest systems</b> commonly found in <b>role-playing games</b>.</p>
 
   <div class="video-row">
-      <video
-        class="content-video"
-        muted
-        loop
-        autoplay
-        playsinline
-        preload="metadata">
-        <source
-              src="/videos/AtHerExpense/AtHerExpense_CrossingThreshold.webm"
-              type="video/webm">
-      </video>
       <video
         class="content-video"
         muted
