@@ -10,7 +10,7 @@ permalink: /aboutme/
   
   <div class="intro-text">
       <p>
-        I am a 24-year-old <b>game programmer</b> currently completing my M.Sc. in Computer Science, 
+        I am a Italian <b>game programmer</b> currently completing my M.Sc. in Computer Science, 
         with an <b>expected graduation date of September 2026</b>.
         I am actively <b>seeking full-time opportunities</b> and will be available for employment upon graduation.
         <br>
