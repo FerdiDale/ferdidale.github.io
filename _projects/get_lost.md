@@ -16,7 +16,7 @@ technologies:
   - Layout consistency
   - Object pooling
   - Accelerometer input handling
-order: 2
+order: 1
 ---
 <!--
 <div>

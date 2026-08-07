@@ -15,7 +15,7 @@ technologies:
   - Interaction with objects
   - Data-driven dialogue
   - Branching quest system
-order: 3
+order: 2
 ---
 <div>
     <h1>Relevant contributions</h1>
