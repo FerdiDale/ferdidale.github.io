@@ -31,9 +31,15 @@ title: Projects
         <p>
             {% if project.platforms %}<strong>Platform(s):</strong>
               {{ project.platforms }}<br>{% endif %}
+              
+            {% if project.genres %}<strong>Genre(s):</strong>
+              {{ project.genres }}<br>{% endif %}
 
             {% if project.tools %}<strong>Engine and tools:</strong>
             {{ project.tools }}<br>{% endif %}
+            
+            {% if project.teamsize %}<strong>Team size:</strong>
+              {{ project.teamsize }}<br>{% endif %}
 
             {% if project.role %}<strong>Role:</strong>
             {{ project.role }}<br>{% endif %}
@@ -45,9 +51,9 @@ title: Projects
             {{ project.status }}<br>{% endif %}
         </p>
 
-        {% if page.technologies %}
+        {% if project.technologies %}
         <div class="tech-tags">
-            {% for tech in page.technologies %}
+            {% for tech in project.technologies %}
             <span class="chip">{{ tech }}</span>
             {% endfor %}
         </div>

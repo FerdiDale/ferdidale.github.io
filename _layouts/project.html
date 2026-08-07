@@ -21,9 +21,15 @@ layout: default
             <p>
                 {% if page.platforms %}<strong>Platform(s):</strong>
                 {{ page.platforms }}<br>{% endif %}
+                
+                {% if page.genres %}<strong>Genre(s):</strong>
+                {{ page.genres }}<br>{% endif %}
 
                 {% if page.tools %}<strong>Engine and tools:</strong>
                 {{ page.tools }}<br>{% endif %}
+                
+                {% if page.teamsize %}<strong>Team size:</strong>
+                {{ page.teamsize }}<br>{% endif %}
 
                 {% if page.role %}<strong>Role:</strong>
                 {{ page.role }}<br>{% endif %}

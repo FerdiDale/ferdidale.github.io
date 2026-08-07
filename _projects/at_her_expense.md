@@ -2,7 +2,9 @@
 layout: project
 title: At Her Expense
 platforms: Windows
+genres: First Person Adventure
 duration: 6+ months
+teamsize: 2 programmers
 tools: Unreal Engine 5
 role: Game Designer and Programmer, Technical Artist
 video: /videos/AtHerExpenseTrailer.mp4

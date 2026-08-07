@@ -2,8 +2,10 @@
 layout: project
 title: Get Lost
 platforms: Android
+genres: Top Down Platform
 duration: 2 months
 tools: Java, LiquidFun
+teamsize: Solo
 role: Game Designer and Programmer
 video: /videos/GetLostTrailer.mp4
 thumbnail: /images/GetLostCover.jpg
