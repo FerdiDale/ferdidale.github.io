@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="project-page">
+
+
+    <h1>{{ page.title }}</h1>
+
+    <!-- TOP SECTION: video + info side by side -->
+    <div class="project-hero">
+
+        <div class="project-media">
+            <video controls muted loop playsinline poster="{{ page.thumbnail | relative_url }}">
+                <source src="{{ page.video | relative_url }}" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="project-meta">
+
+            <p>
+                {% if page.platforms %}<strong>Platform(s):</strong>
+                {{ page.platforms }}<br>{% endif %}
+                
+                {% if page.genres %}<strong>Genre(s):</strong>
+                {{ page.genres }}<br>{% endif %}
+
+                {% if page.tools %}<strong>Engine and tools:</strong>
+                {{ page.tools }}<br>{% endif %}
+                
+                {% if page.teamsize %}<strong>Team size:</strong>
+                {{ page.teamsize }}<br>{% endif %}
+
+                {% if page.role %}<strong>Role:</strong>
+                {{ page.role }}<br>{% endif %}
+                
+                {% if page.gamejam %}<strong>Game Jam:</strong>
+                {{ page.gamejam }}<br>{% endif %}
+
+                {% if page.duration %}<strong>Time spent on project:</strong>
+                {{ page.duration }}<br>{% endif %}
+
+                {% if page.status %}<strong>Status:</strong>
+                {{ page.status }}<br>{% endif %}
+            </p>
+
+            {% if page.technologies %}
+            <div class="tech-tags">
+                {% for tech in page.technologies %}
+                <span class="chip">{{ tech }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <a href="{{ page.link }}" class="project-download-button" target="_blank">Download here</a>
+
+        </div>
+
+    </div>
+
+    <!-- FULL CONTENT BELOW -->
+    <div class="project-content">
+        {{ content }}
+    </div>
+
+</div>

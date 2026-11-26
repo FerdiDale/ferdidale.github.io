@@ -1,9 +1,10 @@
 ---
-layout: project
+layout: jamgame
 title: Still Alight
 platforms: Browser, Windows
 genres: 2D Platform
-duration: 5 days (GTMK26 Jam)
+duration: 5 days
+jam: GTMK26 Jam
 tools: Godot, GDScript
 teamsize: 2 programmers and 1 artist
 role: Game Designer and Programmer
@@ -15,7 +16,7 @@ technologies:
   - Custom movement system
   - Stamina management
   - Dual health system, damage plus situational drain
-order: 3
+order: 1
 ---
 <div>
     <h1>Relevant contributions</h1>
