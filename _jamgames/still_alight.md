@@ -18,10 +18,10 @@ technologies:
   - Dual health system, damage plus situational drain
 order: 1
 ---
-<div>
-    <h1>Relevant contributions</h1>
-    <h2>Movement system</h2>
-    <p></p>
-    <h2>Health system</h2>
-    <p></p>
-</div>
+# <div>
+#     <h1>Relevant contributions</h1>
+#     <h2>Movement system</h2>
+#     <p></p>
+#     <h2>Health system</h2>
+#     <p></p>
+# </div>

@@ -17,6 +17,6 @@ technologies:
   - Animations based on Unity animator
 order: 2
 ---
-<div>
-    <h1>Relevant contributions</h1>
-</div>
+# <div>
+#     <h1>Relevant contributions</h1>
+# </div>
