@@ -15,10 +15,10 @@ description: Game Programmer
 avatar: /images/ProfilePixturePixelart.png
 
 collections:
-  -projects:
-    output: true
-  -jamgames:
-    output: true
+  - projects:
+    	output: true
+  - jamgames:
+    	output: true
 
 #
 # Flags below are optional
