@@ -15,7 +15,9 @@ description: Game Programmer
 avatar: /images/ProfilePixturePixelart.png
 
 collections:
-  projects:
+  -projects:
+    output: true
+  -jamgames:
     output: true
 
 #
