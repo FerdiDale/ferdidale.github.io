@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /
+permalink: /jamgames
 title: Jam Games
 ---
 
